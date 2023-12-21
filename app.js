@@ -124,6 +124,7 @@ app.get("/products/:id", (req, res, next) => {
     }
 });
 app.post("/products", (req, res, next) => {
+    req.body.category.id = +req.body.category.id;
     const newProduct = {
         ...req.body,
         id: new Date().getTime()
