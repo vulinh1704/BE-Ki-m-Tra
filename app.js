@@ -144,6 +144,7 @@ app.delete("/products/:id", (req, res, next) => {
 });
 app.put("/products/:id", (req, res, next) => {
     const id = +req.params.id;
+    req.body.category.id = +req.body.category.id;
     const index = findStudentIndex(id);
     if (index !== -1) {
         const product = products[index];
