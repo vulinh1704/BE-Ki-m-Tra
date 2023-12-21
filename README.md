@@ -28,16 +28,16 @@
 ```GET http://localhost:8080/products```
 ```GET http://localhost:8080/products?name=B```
 
-#### Getting a student by id
+#### Getting a product by id
 ```GET http://localhost:8080/products/1```
 
-#### Creating a student
+#### Creating a product
 ```POST http://localhost:8080/products```
 
-#### Deleting a student by id
+#### Deleting a product by id
 ```DELETE http://localhost:8080/products/1```
 
-#### Updating a student by id
+#### Updating a product by id
 ```PUT http://localhost:8080/products/1```
 
 #### Getting all categories 
